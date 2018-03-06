@@ -621,7 +621,7 @@ public class SmartBarView extends BaseNavigationBar {
 
     private void updateAnimationStyle() {
         mButtonAnimationStyle = Settings.Secure.getIntForUser(getContext().getContentResolver(),
-                "smartbar_button_animation_style", SmartButtonView.ANIM_STYLE_RIPPLE, UserHandle.USER_CURRENT);
+                "smartbar_button_animation_style", SmartButtonView.ANIM_STYLE_PIXEL_HOME, UserHandle.USER_CURRENT);
         ViewGroup hidden = (ViewGroup) getHiddenView().findViewWithTag(Res.Common.NAV_BUTTONS);
         for (String buttonTag : mCurrentSequence) {
             SmartButtonView v = findCurrentButton(buttonTag);
