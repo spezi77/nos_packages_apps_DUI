@@ -385,7 +385,7 @@ public class SmartBarView extends BaseNavigationBar {
     }
 
     private void setMediaArrowsVisibility(boolean backAlt) {
-        setMediaArrowsVisibility(mCurrentView, (!backAlt && (mIsMediaPlaying&& mAudioManager.isMusicActive()))
+        setMediaArrowsVisibility(mCurrentView, (!backAlt && (mIsMediaPlaying /*&& mAudioManager.isMusicActive()*/))
                 ? View.VISIBLE : View.INVISIBLE);
     }
 
